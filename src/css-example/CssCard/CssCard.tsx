@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import './cssCard.css';
 
 interface CardProps {
@@ -5,7 +6,7 @@ interface CardProps {
     setCount: React.Dispatch<React.SetStateAction<number>>
 }
 
-export const CssCard = ({count, setCount}: CardProps) => {
+export const CssCard = memo(({ count, setCount }: CardProps) => {
     return (
         <div className="card">
             <button onClick={() => setCount((count) => count + 1)}>
@@ -16,4 +17,4 @@ export const CssCard = ({count, setCount}: CardProps) => {
             </p>
         </div>
     )
-}
+});

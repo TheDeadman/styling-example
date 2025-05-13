@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import reactLogo from '../../assets/react.svg';
 import viteLogo from '../../assets/vite.svg';
 import './cssLogos.css';
 
-export const CSSLogos = () => {
+export const CSSLogos = memo(() => {
     return (
         <div>
             <a href="https://vite.dev" target="_blank">
@@ -13,4 +14,4 @@ export const CSSLogos = () => {
             </a>
         </div>
     )
-}
+})

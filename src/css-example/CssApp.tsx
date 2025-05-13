@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CSSLogos } from './CssLogos/CssLogos'
 import { CssCard } from './CssCard/CssCard'
-import { CssButtons } from './CssButtons/CssButtons'
+import CssButtons from './CssButtons/CssButtons'
 import { Container } from '../Container'
 import './App.css'
 

@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import './cssButtons.css';
 
-export const CssButtons = () => {
+const CssButtons = memo(() => {
 
     return (
         <div className="theme-buttons-container">
@@ -8,4 +9,7 @@ export const CssButtons = () => {
             <button>Two</button>
         </div>
     )
-}
+});
+CssButtons.displayName = "CssButtons";
+
+export default CssButtons;
