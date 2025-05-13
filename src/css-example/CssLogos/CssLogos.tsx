@@ -15,3 +15,5 @@ export const CSSLogos = memo(() => {
         </div>
     )
 })
+
+CSSLogos.displayName = "CSSLogos"

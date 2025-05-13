@@ -18,3 +18,5 @@ export const CssCard = memo(({ count, setCount }: CardProps) => {
         </div>
     )
 });
+
+CssCard.displayName = "CssCard";
