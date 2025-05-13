@@ -1,8 +1,8 @@
 import reactLogo from '../../assets/react.svg';
 import viteLogo from '../../assets/vite.svg';
-import './cssLogos.css';
+import './scssLogos.scss';
 
-export const CSSLogos = () => {
+export const SCSSLogos = () => {
     return (
         <div>
             <a href="https://vite.dev" target="_blank">

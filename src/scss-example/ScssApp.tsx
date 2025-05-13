@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { CSSLogos } from './CssLogos/CssLogos'
-import { CssCard } from './CssCard/CssCard'
-import { CssButtons } from './CssButtons/CssButtons'
+import { SCSSLogos } from './ScssLogos/ScssLogos'
+import { ScssCard } from './ScssCard/ScssCard'
+import { ScssButtons } from './ScssButtons/ScssButtons'
 import { Container } from '../Container'
 import './App.css'
 
@@ -11,13 +11,13 @@ function CssApp() {
 
     return (
         <Container count={count}>
-            <CSSLogos />
+            <SCSSLogos />
             <h1>Vite + React</h1>
-            <CssCard count={count} setCount={setCount} />
+            <ScssCard count={count} setCount={setCount} />
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
             </p>
-            <CssButtons />
+            <ScssButtons />
         </Container>
     )
 }

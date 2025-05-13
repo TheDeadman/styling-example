@@ -1,0 +1,11 @@
+.theme-buttons-container button {
+    margin: var(--mui-spacing);
+}
+
+.even .theme-buttons-container button {
+    text-decoration: underline;
+}
+
+.odd .theme-buttons-container button {
+    text-decoration: overline;
+}

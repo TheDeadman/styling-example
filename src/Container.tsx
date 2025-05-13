@@ -1,20 +1,16 @@
 interface ContainerProps {
-    
-        children?: React.ReactNode;
-        count: number;
-        className: string;
-    
+    children?: React.ReactNode;
+    count: number;
 }
 
 export const Container = ({
     children,
-    count,
-    className
+    count
 }: ContainerProps) => {
-    const specialClass = count % 2 === 0 ? 'even' : 'odd';
+    const countClass = count % 2 === 0 ? 'even' : 'odd';
 
     return (
-        <div className={`app-wrapper ${className} ${specialClass}`}>
+        <div className={`app-wrapper ${countClass}`}>
             {children}
         </div>
     )

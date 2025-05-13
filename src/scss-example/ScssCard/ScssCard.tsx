@@ -5,7 +5,7 @@ interface CardProps {
     setCount: React.Dispatch<React.SetStateAction<number>>
 }
 
-export const CssCard = ({count, setCount}: CardProps) => {
+export const ScssCard = ({ count, setCount }: CardProps) => {
     return (
         <div className="card">
             <button onClick={() => setCount((count) => count + 1)}>
